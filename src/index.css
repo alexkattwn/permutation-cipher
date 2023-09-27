@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #e5eaf5;
+    font-family: 'Roboto', sans-serif;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.clear {
+    background-color: transparent;
+    border-top: 1px solid #8458B3;
+    border-bottom: 1px solid #8458B3;
+    border-right: none;
+    border-left: none;
+    padding: 6px 8px;
+    transition: all 0.5s ease;
+}
+
+.clear:hover {
+    color: #8458B3;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #8458B3;
+    padding: 6px 8px;
+    transition: all 0.5s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn:hover {
+    background-color: rgb(180, 104, 252);
+    color: beige;
+    cursor: pointer;
+}
+
+.right {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.input {
+    background-color: transparent;
+    padding: 6px 8px;
+    width: 300px;
+    border: 1px solid #8458B3;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    border-right: none;
+    font-family: 'Roboto', sans-serif;
+
+    @media (max-width: 568px) {
+        width: 200px;
+    }
+
+    @media (max-width: 368px) {
+        width: 150px;
+    }
+}
+
+.input::placeholder {
+    color: #8458B3;
+    opacity: 0.6;
+}
+
+.input:focus,
+.input:hover {
+    color: #8458B3;
+    border-color: #8458B3;
+    outline: 0;
+}
+
+.input:disabled,
+.input[readonly] {
+    opacity: 0.5;
+}
+
+.input-block {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.block-key {
+    display: flex;
+    align-items: center;
+}
+
+.key {
+    border-radius: 8px;
+    border-right: 1px solid #8458B3;
+    width: 120px;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px gray;
+    border-radius: 10px;
+    gap: 6px;
+}
+
+.copy {
+    border-radius: 10px;
+}

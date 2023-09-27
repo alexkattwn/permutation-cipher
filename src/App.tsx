@@ -36,12 +36,14 @@ function App() {
                     onChange={(e) => setMessage(e.target.value)}
                     placeholder='Введите сообщение...'
                 />
-                <button
-                    className='clear'
-                    onClick={() => setMessage('')}
-                >
-                    X
-                </button>
+                {message && (
+                    <button
+                        className='clear'
+                        onClick={() => setMessage('')}
+                    >
+                        X
+                    </button>
+                )}
                 <button
                     className='btn'
                     onClick={handleCrypt}
